@@ -10,14 +10,13 @@
 
 var a = prompt('Введите значение');
 //let a='de234242wdewfwwf';
-if (typeof(a)!='string'||isNaN(+a)||a===null){
+if (isNaN(+a)||a===null||a===''){
   console.log('тип данных Is not a number');}
 
- else if
-    (typeof +a==='number' && a%2 ===0){
+ else if (typeof +a==='number'&& !isNaN(+a) && a%2 ===0){
   console.log('это число четное');  
 }
-    else  if(typeof +a==='number' && a%2 ===1){
+    else  if(typeof +a==='number'&& !isNaN(+a) && a%2 ===1){
   console.log('Это число нечетное');  
 } 
 
