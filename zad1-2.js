@@ -8,22 +8,18 @@
 Если передано не число, выведите: «Упс, кажется, вы ошиблись».*/
 
 
-var a = prompt('Введите значение');
-//let a='de234242wdewfwwf';
-if (isNaN(+a)||a===null||a===''){
-  console.log('тип данных Is not a number');}
+var a = prompt('Введите числовое значение');
+
+if (isNaN(+a)||a===null){
+  console.log('O_o ошибочка вышла, вы ввели не число');}
 
  else if (typeof +a==='number'&& !isNaN(+a) && a%2 ===0){
   console.log('это число четное');  
 }
-    else  if(typeof +a==='number'&& !isNaN(+a) && a%2 ===1){
+  else  if(typeof +a==='number'&& !isNaN(+a) && a%2 ===1){
   console.log('Это число нечетное');  
 } 
-
-else if (typeof a==='string'){
-    console.log('тип данных строка ');
-  }
-  else {console.log('O_oPsE');}
+  
 
 
 
